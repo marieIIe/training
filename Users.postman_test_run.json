@@ -1,0 +1,194 @@
+{
+	"id": "27f66a82-1524-42c4-8753-52d43982f7d6",
+	"name": "Users",
+	"timestamp": "2020-07-06T12:21:56.523Z",
+	"collection_id": "83c0b115-99d9-4b8d-8c47-ebaace890b27",
+	"folder_id": 0,
+	"environment_id": "82ade4ac-ccd3-47b7-807a-1588ad6bd598",
+	"totalPass": 6,
+	"totalFail": 3,
+	"results": [
+		{
+			"id": "9e42b26c-df9e-4759-891c-195c2d4446e1",
+			"name": "Registration",
+			"url": "http://161.35.202.130:3100/users",
+			"time": 227,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Your test name": true,
+				"Response time is less than 200ms": false
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Your test name": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				227
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Your test name": true,
+					"Response time is less than 200ms": false
+				}
+			]
+		},
+		{
+			"id": "c106659f-e4ba-4f1b-b32b-9ea3b969057d",
+			"name": "Update user's info",
+			"url": "http://161.35.202.130:3100/users",
+			"time": 475,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"Successful POST request": false,
+				"Response time is less than 200ms": false
+			},
+			"testPassFailCounts": {
+				"Successful POST request": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response time is less than 200ms": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				475
+			],
+			"allTests": [
+				{
+					"Successful POST request": false,
+					"Response time is less than 200ms": false
+				}
+			]
+		},
+		{
+			"id": "7a663f68-bbd2-457e-aff7-778e7f1c0bc0",
+			"name": "Login",
+			"url": "http://161.35.202.130:3100/users/login",
+			"time": 406,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				406
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "ee261b50-5f1a-4f73-84ac-48193b3d4665",
+			"name": "Logout",
+			"url": "http://161.35.202.130:3100/users/logout",
+			"time": 127,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				127
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "fbfd581e-1b0c-406e-92e6-3ff9dad57f3d",
+			"name": "UserID",
+			"url": "http://161.35.202.130:3100/users/?userId=186",
+			"time": 1090,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Successful GET request": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful GET request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1090
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Successful GET request": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 2325,
+	"collection": {
+		"requests": [
+			{
+				"id": "9e42b26c-df9e-4759-891c-195c2d4446e1",
+				"method": "POST"
+			},
+			{
+				"id": "c106659f-e4ba-4f1b-b32b-9ea3b969057d",
+				"method": "PUT"
+			},
+			{
+				"id": "7a663f68-bbd2-457e-aff7-778e7f1c0bc0",
+				"method": "POST"
+			},
+			{
+				"id": "ee261b50-5f1a-4f73-84ac-48193b3d4665",
+				"method": "DELETE"
+			},
+			{
+				"id": "fbfd581e-1b0c-406e-92e6-3ff9dad57f3d",
+				"method": "GET"
+			}
+		]
+	}
+}
